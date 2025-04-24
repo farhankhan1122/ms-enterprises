@@ -2,7 +2,7 @@
 
 const Header = () => {
     return (
-        <header className="header_wrapper w-full h-24">
+        <header className="header_wrapper w-full h-24 flex">
             <div className="w-[60px] h-[30px]">
                 <svg viewBox="56 220 170 105">
                     <g id="root" fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
