@@ -1,0 +1,59 @@
+.logo-slider {
+  overflow: hidden;
+  width: 89%;
+  background: #fff;
+  margin: auto;
+}
+  
+  .logo-track {
+    display: flex;
+    gap: 2rem;                 /* space between icons */
+    animation: scroll 12s linear infinite;  /* speed + loop */
+  }
+  
+  .logo-track i {
+    font-size: 2rem;           /* icon size */
+    color: #444;
+    transition: transform 0.3s;
+  }
+  
+  .logo-track i:hover {
+    transform: scale(1.2);
+    color: #1e88e5;            /* hover tint */
+  }
+
+  img.logo-img {
+    height: 150px;
+    width: 150px;
+    vertical-align: middle;
+    aspect-ratio: auto 150 / 150;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    text-align: center;
+}
+.sec-title {
+  position: relative;
+  z-index: 1;
+}
+.sec-title h5 {
+  position: relative;
+  display: block;
+  font-size: 40px;
+  line-height: 1.28em;
+  color: #222222;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+  
+  /* Keyframes for continuous marquee effect */
+  @keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* shift by half because we duplicated array */
+  }
+  
+  /* Make it responsive */
+  @media (max-width: 600px) {
+    .logo-track i { font-size: 1.5rem; }
+    .logo-track { gap: 1.2rem; }
+  }
+  
